@@ -7,11 +7,11 @@ const ParagraphLink = ( propiedades  ) => { // { clave:valor, href: ""  }
   const myParagraph = (
     <>
       <a
-        style={ { textDecoration: "none", color: "purple" } }
+        style={ { textDecoration: "none", color:  propiedades.color } }
         href= { propiedades.href }
         target= '_blank'
       >
-        <p>Te llevo al infinito {5 * 5} </p>
+        <p> { propiedades.children } </p>
       </a>
     </>
   );
