@@ -1,17 +1,15 @@
 // Props: Comunican los componentes padres con los componentes hijos.
-
-const ParagraphLink = ( propiedades  ) => { // { clave:valor, href: ""  }
-
-    console.log( propiedades );
+const ParagraphLink = ( {href, color, children}  ) => { // { clave:valor, href: ""  }
+  //console.log( props );
 
   const myParagraph = (
     <>
       <a
-        style={ { textDecoration: "none", color:  propiedades.color } }
-        href= { propiedades.href }
+        style={ { textDecoration: "none", color: color } }
+        href= { href }
         target= '_blank'
       >
-        <p> { propiedades.children } </p>
+        <p> { children } </p>
       </a>
     </>
   );
@@ -20,3 +18,11 @@ const ParagraphLink = ( propiedades  ) => { // { clave:valor, href: ""  }
 };
 
 export default ParagraphLink; // exportación por default.
+
+/*
+Desestructuración
+  const [varA, , varB] = [23 , 45, 67];
+
+  const {varC, varD:varG } = {varC, varF, varG, }
+
+*/
