@@ -1,0 +1,20 @@
+
+.color-anchor {
+    color:blueviolet;
+}
+
+#anchor-paragraph {
+    color:chartreuse;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+.content {
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
