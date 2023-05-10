@@ -9,9 +9,9 @@ export const Counter = ( {initialValue=0, increment=1, decrement=1} ) => {
      <>
         <h1>Counter</h1>        
         <h2>{ counter }</h2>
-        <Button setcounter= { setcounter  } newValue={ counter + increment } >+</Button>
-        <Button setcounter= { setcounter  } newValue={ counter - decrement }  >-</Button>
-        <Button setcounter= { setcounter  } newValue={ initialValue }  >Reset</Button>
+        <Button style={ {color:"blue"} } setcounter= { setcounter  } newValue={ counter + increment } >+</Button>
+        <Button style={ {color:"green"} }setcounter= { setcounter  } newValue={ counter - decrement }  >-</Button>
+        <Button style={ {color:"red"} }setcounter= { setcounter  } newValue={ initialValue }  >Reset</Button>
      </>   
   );
 };

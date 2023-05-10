@@ -1,14 +1,14 @@
 import React from "react";
 
-export const Button = ({ children, setcounter, newValue }) => {
+export const Button = ({ children, setcounter, newValue, style }) => {
 
-    const handleOnClick = (event)=>{       
+/*     const handleOnClick = (event)=>{       
         setcounter(  newValue  ) ;       
-    }
+    } */
 
   return (
     <>
-      <button style={{ color: "blue" }} onClick={ handleOnClick  }>
+      <button style={style} onClick={ ()=> setcounter(newValue)  }>
         {children}
       </button>
     </>
