@@ -3,6 +3,7 @@ import { Button } from "../button/Button";
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import { ButtonGroup } from "@mui/material";
 
 export const Counter = ( {initialValue=0, increment=1, decrement=1} ) => {
    
@@ -12,9 +13,11 @@ export const Counter = ( {initialValue=0, increment=1, decrement=1} ) => {
      <>
         <h1>Counter</h1>        
         <h2>{ counter }</h2>
+        <ButtonGroup variant="contained" aria-label="outlined primary button group">
         <Button startIcon={ <AddCircleIcon /> } setcounter= { setcounter  } newValue={ counter + increment } ></Button>
         <Button startIcon={ <RemoveCircleIcon /> } setcounter= { setcounter  } newValue={ counter - decrement }  ></Button>
         <Button startIcon={ <RestartAltIcon /> } setcounter= { setcounter  } newValue={ initialValue }  >Reset</Button>
+        </ButtonGroup>
      </>   
   );
 };
