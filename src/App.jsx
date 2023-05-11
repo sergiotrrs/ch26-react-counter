@@ -15,8 +15,8 @@ export const App = () => {
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="social-networks" element={ <SocialNetworks /> } />
-        <Route path="counter/1" element={ <Counter initialValue={100} increment={5} decrement={5} /> } />
-        <Route path="counter/2" element={ <Counter initialValue={0} increment={10} /> } />                                
+        <Route path="counter/1" element={ <Counter key={1} initialValue={100} increment={5} decrement={5} /> } />
+        <Route path="counter/2" element={ <Counter key={2} initialValue={0} increment={10} /> } />                                
         <Route path="*" element={  <NotFound /> } />
         {/* <Route path='*' element={<Navigate to='/counter/1' />} />   */}                      
       </Routes>
